@@ -35,5 +35,12 @@
 			"\"name\": $1",
 			"}""}"
 		]
+	},
+	"subrank codons": {
+		"prefix": "cod",
+		"body": [
+			"\"codon0\": \"$1\",",
+			"\"codon1\": \"$2\""
+		]
 	}
 }

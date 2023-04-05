@@ -16,12 +16,12 @@
 		"prefix": "pmd",
 		"body": [
 			"Title: $1",
-			"Date: $2",
-			"Category: $3",
-			"Tags: $4",
-			"Summary: $5",
+			"Date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"Category: $2",
+			"Tags: $3",
+			"Summary: $4",
 			"Authors: David Pattinson",
-			"$6"
+			"$5"
 		]
 	},
 	"Investigation skeleton": {

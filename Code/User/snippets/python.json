@@ -16,5 +16,16 @@
 		"prefix": "#",
 		"body": "# %% $1",
 		"description": "New jupyter lab code block"
+	},
+	"Pelican metadata for ipynb": {
+		"prefix": "pmd",
+		"body": [
+			"- title: $1",
+			"- author: ${2:David Pattinson}",
+			"- date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"- category: ${3:ipynb}",
+			"- summary: $4",
+			"- tags: ${5:ipynb}"
+		]
 	}
 }

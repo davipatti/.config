@@ -42,17 +42,25 @@
 			"$4",
 		]
 	},
+	"Section title": {
+		"prefix": "stitle",
+		"body": [
+			"$1",
+			"${1/./=/g}",
+		]
+	},
 	"Pelican metadata": {
 		"prefix": "pmd",
 		"body": [
+			"${1/./#/g}",
 			"$1",
-			"$2",
+			"${1/./#/g}",
 			"",
-			":date: $3",
-			":tags: $4",
-			":category: $5",
+			":date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			":tags: $2",
+			":category: $3",
 			":authors: David Pattinson",
-			":summary: $6",
+			":summary: $4",
 			"",
 		]
 	},
@@ -67,10 +75,10 @@
 		"body": [
 			".. image:: {static}$1",
 			"   :width: 75%",
-			"   :alt: $2",
+			"   :alt: figure",
 			"   :target: {static}$1",
 			"",
-			"*Fig. $3* $4"
+			"*Fig. $2* $3"
 		]
 	},
 	"Code include": {
